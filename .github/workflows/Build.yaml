@@ -38,5 +38,7 @@ jobs:
           cache-encryption-key: ${{ secrets.GRADLE_ENCRYPTION_KEY }}
 
       - name: Check build-logic
-        run: ./gradlew assembleDebug
+        run: ./gradlew :app:assembleDebug
+        env:
+          GRADLE_ENTERPRISE_ACCESS_KEY: ${{ secrets.GE_TOKEN }}        
 
