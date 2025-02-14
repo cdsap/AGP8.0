@@ -36,7 +36,7 @@ internal fun Project.configureKotlinAndroid(
     commonExtension: CommonExtension<*, *, *, *, *, *>,
 ) {
     commonExtension.apply {
-        buildToolsVersion = "34.0.0"
+        buildToolsVersion = "35.0.1"
         compileSdk = 35
 
         defaultConfig {
